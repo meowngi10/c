@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+   char *names[4] = {"Nino", "Nana", "Lika", "Maka"};
+   char *subs[4] = {"shualeduri", "prezentacia", "sashinao davaleba", "finaluri"};
+   int i,j;
+   int A[4][4]={
+       {23,15,12,29},
+       {20,25,10,28},
+       {30,16,13,40},
+       {19,20,15,28},
+   };
+   int max = 0;
+   int max2 = 0;
+   int maxname, maxsub;
+   int name, sub;
+   
+   for (i=0; i<4; i++){
+       for(j=0; j<4; j++){
+           // udidesi
+           if(A[i][j]>max){
+               max2=max;
+               name = maxname;
+               sub = maxsub;
+               max=A[i][j];
+               maxname = i;
+               maxsub = j;
+           }
+       }
+   };
+   
+   printf("%s - ", names[name]);
+   printf("%s - ", subs[sub]);
+   printf("%d", max2);
+    
+
+    return 0;
+}
