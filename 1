@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int X;
+    
+    while(1){
+        
+        printf("\nsheitanet ricxvi:\n");
+        scanf("%d", &X);
+        printf(" sawyisi ricxvi %d\n", X);
+        if(X==0){
+            break;
+        }
+        else{
+        printf("shebrunebuli ");
+        while(X>0){
+            printf("%d", X%10);
+            X = X/10;
+        }
+        }
+        
+    }
+
+    return 0;
+}
