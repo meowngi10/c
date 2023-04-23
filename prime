@@ -9,3 +9,17 @@ int is_prime(int num) {
     }
     return 1;
 }
+
+
+include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main() {
+    srand ( time(NULL) );
+    int myArray[11] = { 4,8,2,5,9,1,7,10,43,23,3 };
+    int randomIndex = rand() % 11;
+    int randomValue = myArray[randomIndex];
+    printf("Reference: %d\n", randomValue);
+    return 0;
+}
